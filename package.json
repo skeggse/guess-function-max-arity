@@ -30,7 +30,7 @@
     "variadic"
   ],
   "author": "Eli Skeggs <skeggse@users.noreply.github.com> (https://eliskeggs.com)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/skeggse/guess-function-max-arity/issues"
   },
