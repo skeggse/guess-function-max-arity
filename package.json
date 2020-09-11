@@ -1,0 +1,53 @@
+{
+  "name": "guess-function-max-arity",
+  "version": "1.0.0",
+  "description": "Guess the maximum number of arguments the given function will consume.",
+  "main": "./dist/guess.js",
+  "module": "./dist/guess.mjs",
+  "scripts": {
+    "build": "babel guess.js -d dist/ && cp guess.js dist/guess.mjs",
+    "ci": "npm run lint && npm test",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skeggse/guess-function-max-arity.git"
+  },
+  "keywords": [
+    "arity",
+    "count",
+    "function",
+    "guess",
+    "introspect",
+    "length",
+    "parse",
+    "scan",
+    "variadic"
+  ],
+  "author": "Eli Skeggs <skeggse@users.noreply.github.com> (https://eliskeggs.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skeggse/guess-function-max-arity/issues"
+  },
+  "homepage": "https://github.com/skeggse/guess-function-max-arity#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@mixmaxhq/prettier-config": "^1.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-mixmax": "^4.11.1",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.1"
+  },
+  "dependencies": {
+    "acorn": "^8.0.1",
+    "ast-types": "^0.14.1",
+    "scope-analyzer": "^2.1.1"
+  }
+}
