@@ -1,5 +1,7 @@
 # guess-function-max-arity
 
+![Node.js CI](https://github.com/skeggse/guess-function-max-arity/workflows/Node.js%20CI/badge.svg)
+
 SEnD HelP
 
 ## About
